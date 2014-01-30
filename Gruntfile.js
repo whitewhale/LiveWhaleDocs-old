@@ -18,6 +18,24 @@ module.exports = function(grunt) {
         helpers: 'src/helpers/helper-*.js',
         assets: 'dest/assets',
         layoutdir: 'src/templates/layouts',
+        partials: ['src/templates/partials/*.hbs']
+      },
+      foo: {
+        options: {
+          plugin: ['assemble-contrib-markdown'],
+          layout: 'markdown-2.hbs'
+        },
+        files: {'dist/': 'src/content/widgets/*.md'}
+      }
+    },
+
+    /*
+    assemble: {
+      options: {
+        flatten: true,
+        helpers: 'src/helpers/helper-*.js',
+        assets: 'dest/assets',
+        layoutdir: 'src/templates/layouts',
         partials: ['src/templates/partials/*.hbs', './*.md']
       },
       html1: {
@@ -49,11 +67,12 @@ module.exports = function(grunt) {
         }
       }
     },
+    */
 
     // Before generating any new files,
     // remove any previously-created files.
     clean: {
-      example: ['dest/*.{html,md}']
+      example: ['dist/*.{html,md}']
     }
   });
 
