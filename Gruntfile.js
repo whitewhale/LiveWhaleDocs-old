@@ -29,7 +29,7 @@ module.exports = function(grunt) {
       }
     },
 
-    /*
+/*
     assemble: {
       options: {
         flatten: true,
@@ -53,7 +53,7 @@ module.exports = function(grunt) {
           layout: 'markdown-2.hbs'
         },
         files: {
-          'dest/': ['src/content/markdown/*.md']
+          'dest/': ['src/content/*.md']
         }
       },
       markdown: {
@@ -67,7 +67,7 @@ module.exports = function(grunt) {
         }
       }
     },
-    */
+*/
 
     // Before generating any new files,
     // remove any previously-created files.
