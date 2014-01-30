@@ -1,0 +1,11 @@
+node_modules
+npm-debug.log
+
+tmp
+temp
+TODO.md
+
+DS_Store
+
+dest
+docs
